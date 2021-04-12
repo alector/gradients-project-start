@@ -1,7 +1,7 @@
 import GradientsList from "./components/GradientsList"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
-import GradientsSelect from "./components/GradientsSelect"
+import GradientsApp from "./components/GradientsApp"
 
 function App() {
   return (
@@ -10,8 +10,7 @@ function App() {
 
       <main className="container">
         <h1 className="text-center my-4">Alyra Gradients</h1>
-        <GradientsSelect />
-        <GradientsList />
+        <GradientsApp />
       </main>
       <Footer />
     </div>
