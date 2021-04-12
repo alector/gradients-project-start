@@ -1,23 +1,17 @@
 import React from "react"
 
-const GradientsSelect = () => {
+const GradientsSelect = ({ selectedTag, handleSelectTag, uniqueTags }) => {
   return (
     <div className="input-group mb-3">
-      <label className="input-group-text" for="select">
+      <label className="input-group-text" htmlFor="select">
         Filtrer par tag
       </label>
-      <select className="form-select" id="select">
+      <select className="form-select" id="select" onChange={handleSelectTag} value={selectedTag}>
         <option value="all">Tous</option>
-        <option value="gris">gris</option>
-        <option value="vert">vert</option>
-        <option value="bleu">bleu</option>
-        <option value="violet">violet</option>
-        <option value="rose">rose</option>
-        <option value="jaune">jaune</option>
-        <option value="orange">orange</option>
-        <option value="fuchsia">fuchsia</option>
-        <option value="mauve">mauve</option>
-        <option value="rouge">rouge</option>
+
+        {uniqueTags.map(tag => {
+          return <option value="{tag}">{tag}</option>
+        })}
       </select>
     </div>
   )
