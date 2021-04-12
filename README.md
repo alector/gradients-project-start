@@ -1,4 +1,4 @@
-# Projet Gradients (Équipe Rouge)
+# Projet Gradients (Équipe Rouge 02)
 
 Dans ce challenge vous avez pour but de construire une application web _monopage_ [comme celle-ci.](https://alyra-gradients-bonus.netlify.app/)
 
