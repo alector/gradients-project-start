@@ -10,7 +10,7 @@ const GradientsSelect = ({ selectedTag, handleSelectTag, uniqueTags }) => {
         <option value="all">Tous</option>
 
         {uniqueTags.map(tag => {
-          return <option value="{tag}">{tag}</option>
+          return <option value={tag}>{tag}</option>
         })}
       </select>
     </div>

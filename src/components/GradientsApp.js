@@ -15,7 +15,7 @@ const GradientsApp = () => {
   return (
     <>
       <GradientsSelect uniqueTags={uniqueTags} selectedTag={selectedTag} handleSelectTag={handleSelectTag} />
-      <GradientsList gradients={gradients} />
+      <GradientsList gradients={gradients} selectedTag={selectedTag} />
     </>
   )
 }
