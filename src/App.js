@@ -1,13 +1,16 @@
 import GradientsList from "./components/GradientsList"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import GradientsSelect from "./components/GradientsSelect"
 
 function App() {
   return (
     <div>
       <Header />
-      <h1 className="text-center my-4">Alyra Gradients</h1>
+
       <main className="container">
+        <h1 className="text-center my-4">Alyra Gradients</h1>
+        <GradientsSelect />
         <GradientsList />
       </main>
       <Footer />
