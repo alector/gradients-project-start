@@ -1,12 +1,8 @@
 import React from "react"
 
 const GradientTags = ({ selectedTag, TagsArray, handleClickTagBtn }) => {
-  const handleClick = () => {
-    return "bla"
-  }
-
   const tagButtons = TagsArray.map(tag => {
-    const isDisabled = tag == selectedTag
+    const isDisabled = tag === selectedTag
     return (
       <button type="button" className={`btn btn-sm me-2 mb-2 ${isDisabled ? "bg-light" : "bg-dark text-white"}`} onClick={() => handleClickTagBtn(tag)} disabled={isDisabled}>
         {tag}

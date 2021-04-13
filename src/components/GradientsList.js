@@ -9,7 +9,7 @@ const GradientsList = ({ gradients, selectedTag, setSelectedTag, handleClickTagB
           if (TagsArray.includes(selectedTag)) {
             console.log("TaggsArray", TagsArray)
 
-            return <Gradient colorStart={gradient.start} colorEnd={gradient.end} selectedTag={selectedTag} TagsArray={TagsArray} handleClickTagBtn={handleClickTagBtn} />
+            return <Gradient colorStart={gradient.start} colorEnd={gradient.end} name={gradient.name} selectedTag={selectedTag} TagsArray={TagsArray} handleClickTagBtn={handleClickTagBtn} />
           }
           return null
         }

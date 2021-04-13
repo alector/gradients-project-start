@@ -1,4 +1,3 @@
-import GradientsList from "./components/GradientsList"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import GradientsApp from "./components/GradientsApp"

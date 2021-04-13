@@ -1,7 +1,6 @@
 import React from "react"
 
 function Header() {
-  const myStyle = "background-image: linear-gradient(to right, rgb(82, 82, 82), rgb(61, 114, 180))"
   const color1 = "#343336"
   const color2 = "#B408A4"
 
