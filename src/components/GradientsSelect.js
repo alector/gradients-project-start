@@ -1,12 +1,12 @@
 import React from "react"
 
-const GradientsSelect = ({ selectedTag, handleSelectTag, uniqueTags }) => {
+const GradientsSelect = ({ selectedTag, handleSelectDropdown, uniqueTags }) => {
   return (
     <div className="input-group mb-3">
       <label className="input-group-text" htmlFor="select">
         Filtrer par tag
       </label>
-      <select className="form-select" id="select" onChange={handleSelectTag} value={selectedTag}>
+      <select className="form-select" id="select" onChange={handleSelectDropdown} value={selectedTag}>
         <option value="all">Tous</option>
 
         {uniqueTags.map(tag => {

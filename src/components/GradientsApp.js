@@ -5,17 +5,22 @@ import GradientsList from "./GradientsList"
 import { gradients, uniqueTags } from "../gradients"
 
 const GradientsApp = () => {
-  const handleSelectTag = e => {
+  const handleSelectDropdown = e => {
     setSelectedTag(e.target.value)
   }
+
+  const handleClickTagBtn = tagName => {
+    setSelectedTag(tagName)
+  }
+
   const [selectedTag, setSelectedTag] = useState("")
 
   console.log("selectedTag", selectedTag)
 
   return (
     <>
-      <GradientsSelect uniqueTags={uniqueTags} selectedTag={selectedTag} handleSelectTag={handleSelectTag} />
-      <GradientsList gradients={gradients} selectedTag={selectedTag} />
+      <GradientsSelect uniqueTags={uniqueTags} selectedTag={selectedTag} handleSelectDropdown={handleSelectDropdown} />
+      <GradientsList gradients={gradients} selectedTag={selectedTag} handleClickTagBtn={handleClickTagBtn} />
     </>
   )
 }

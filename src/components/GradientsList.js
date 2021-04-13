@@ -1,15 +1,19 @@
 import Gradient from "./Gradient"
-const GradientsList = ({ gradients, selectedTag }) => {
+const GradientsList = ({ gradients, selectedTag, setSelectedTag, handleClickTagBtn }) => {
   return (
     <ul className="row list-unstyled">
       {gradients.map(gradient => {
         const TagsArray = gradient.tags
 
-        if (TagsArray.includes(selectedTag)) {
-          return <Gradient colorStart={gradient.start} colorEnd={gradient.start} name={gradient.name} selectedTag={selectedTag} />
-        }
+        if (selectedTag) {
+          if (TagsArray.includes(selectedTag)) {
+            console.log("TaggsArray", TagsArray)
 
-        return null
+            return <Gradient colorStart={gradient.start} colorEnd={gradient.end} selectedTag={selectedTag} TagsArray={TagsArray} handleClickTagBtn={handleClickTagBtn} />
+          }
+          return null
+        }
+        return <Gradient colorStart={gradient.start} colorEnd={gradient.end} name={gradient.name} selectedTag={selectedTag} TagsArray={TagsArray} handleClickTagBtn={handleClickTagBtn} />
       })}
     </ul>
   )

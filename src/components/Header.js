@@ -7,8 +7,6 @@ function Header() {
 
   return (
     <header className="text-center bg-dark text-white py-5 mb-5" style={{ background: `linear-gradient(to bottom,  ${color1} 0%,${color2} 100%)` }}>
-      <h1>blabla</h1>
-
       <h1 className="display-1">Alyra Gradients</h1>
       <p className="tagline">Ultime collection de plus beaux dégradés</p>
 
