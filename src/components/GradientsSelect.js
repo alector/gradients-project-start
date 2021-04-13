@@ -7,7 +7,7 @@ const GradientsSelect = ({ selectedTag, handleSelectDropdown, uniqueTags }) => {
         Filtrer par tag
       </label>
       <select className="form-select" id="select" onChange={handleSelectDropdown} value={selectedTag}>
-        <option value="all">Tous</option>
+        <option value="">Tous</option>
 
         {uniqueTags.map(tag => {
           return <option value={tag}>{tag}</option>
